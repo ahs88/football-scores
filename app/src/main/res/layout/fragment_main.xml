@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/listHolder"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+
+
+        <ListView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id = "@+id/scores_list"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="15sp"
+            />
+
+         <TextView
+             android:id="@+id/empty"
+             android:layout_width="fill_parent"
+             android:gravity="center"
+             android:layout_height="100dp"
+             android:background="@android:color/white"
+             android:padding="5dp"
+             android:elevation="5dp"
+             android:visibility="invisible"
+             android:textColor="@android:color/black"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|bottom"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_fab_label="@string/leagues"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/epl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="filterLeague"
+            android:src="@drawable/rsz_epl"
+            android:scaleType="fitXY"
+            fab:fab_label="@string/premierleague"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/primera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/rsz_laliga"
+            fab:fab_label="@string/primeradivison"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/seriaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/rsz_seriea"
+            fab:fab_label="@string/seriaa"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/bundesliga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/rsz_bundesliga"
+            fab:fab_label="@string/bundesliga"
+            fab:fab_size="mini" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/champions_league"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/rsz_champions_league"
+            fab:fab_label="@string/champions_league"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/consolidated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher"
+            fab:fab_label="@string/consolidated_scores"
+            fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

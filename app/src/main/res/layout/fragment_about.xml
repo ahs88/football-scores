@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    style="@style/about"
+    tools:context="barqsoft.footballscores.AboutActivity$PlaceholderFragment">
+
+    <TextView android:text="@string/about_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/about_text"
+        />
+
+</RelativeLayout>
